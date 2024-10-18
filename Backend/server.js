@@ -15,16 +15,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Conexión a MongoDB Atlas
 mongoose
-    .connect('mongodb+srv://crisarielnarvaezt:y4ihoenP2kkhoaCN@cluster0.gkbcdzo.mongodb.net/?retryWrites=true&w=majority', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
-    .then(() => {
-        console.log('Conexión exitosa a MongoDB Atlas');
-    })
-    .catch((error) => {
-        console.error('Error al conectar a MongoDB Atlas:', error);
-    });
+  .connect('mongodb+srv://admin:admin@cluster0.7gu4h.mongodb.net/?retryWrites=true&w=majority')
+  .then(() => {
+    console.log('Conexión exitosa a MongoDB Atlas');
+  })
+  .catch((error) => {
+    console.error('Error al conectar a MongoDB Atlas:', error);
+  });
 
 // Definición del esquema de usuario
 const usuarioSchema = new mongoose.Schema({
