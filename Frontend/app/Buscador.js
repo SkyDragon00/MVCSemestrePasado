@@ -25,8 +25,9 @@ const Buscador = () => {
         },
         body: JSON.stringify({ fechaVenta, fechaFin }),
       });
-
       const data = await response.json();
+      console.log(data);
+
       setResultado(data);
     } catch (error) {
       console.error("Error al buscar el producto más vendido:", error);
@@ -67,9 +68,9 @@ const Buscador = () => {
       {resultado && (
         <div>
           <h3>Resultado:</h3>
-          <p>Producto más vendido: {resultado.productoMasVendido}</p>
-          <p>Total de ventas: {resultado.totalVentas}</p>
-          <p>Vendedor: {resultado.vendedor}</p>
+          <p>Producto más vendido: {resultado.producto}</p>
+          <p>Total de ventas: {resultado.monto}</p>
+          <p>Vendedor: {resultado.vendedor.nombre}</p>
         </div>
       )}
     </div>
