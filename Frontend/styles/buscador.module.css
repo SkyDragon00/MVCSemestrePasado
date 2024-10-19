@@ -2,7 +2,7 @@
     justify-content: center;
     display: flex;
     font-size: xx-large;
-    color: rgb(245, 5, 5);
+    color: rgb(126, 13, 151);
 }
 
 .filtros {
@@ -11,7 +11,7 @@
 }
 
 .boton {
-    background-color: rgb(236, 149, 175);
+    background-color: rgb(210, 55, 109);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -19,7 +19,7 @@
     border-radius: 20px;
     justify-content: center;
     display: flex;
-    color: white;
+    color: rgb(229, 177, 229);
 }
 
 .conbutton {
